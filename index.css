@@ -108,6 +108,7 @@ body{
 }
 
 table{
+  max-width: 800px;
   width: 98%;
   padding: 20px 0px;
   border-radius: 5px;
@@ -132,6 +133,12 @@ i{
 .theadOption > button {
   background: transparent;
   border: none;
+}
+
+td{
+  max-width: 800px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .theadValue {

@@ -33,7 +33,7 @@
       <div class="resume">
         <div class="resume-container">
           <p>Incomes</p>
-          <span id="income-card">R$ 0,00</span>
+          <span id="income-card"></span>
         </div>
         <div class="resume-container">
           <p>Expenses</p>
@@ -41,7 +41,7 @@
         </div>
         <div class="resume-container">
           <p>Total</p>
-          <span id="saldo-card">R$ 0,00</span>
+          <span id="balance-card"></span>
         </div>
       </div>
       <div class="inputs">
@@ -51,13 +51,13 @@
         </div>
         <div class="input-container">
           <label for="valueInput">Value:</label>
-          <input type="text" name="" id="valueInput"/>
+          <input type="text" name="" onInput="inputCurrencyMask(event);" id="valueInput"/>
         </div>
         <div class="input-container">
           <label for="typeInput">Type:</label>
           <select name="" id="typeInput">
             <option value="income">Income</option>
-            <option value="exepense">Expense</option>
+            <option value="expense">Expense</option>
           </select>
         </div>
         <button id="include">Include</button>
@@ -72,20 +72,9 @@
               <th class="theadOption"></th>
             </thead>
             <tr>
-              <td>Compra cartão</td>
-              <td>1200</td>
-              <td><i class="fa-solid fa-arrow-up"></i></td>
-              <td><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td>Compra cartão</td>
-              <td>1200</td>
-              <td><i class="fa-solid fa-arrow-down"></i></td>
-              <td><i class="fa-solid fa-trash"></i></td>
             </tr>
           </table>
         </div>
-        
       </div>
     </div>
   </body>
